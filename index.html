@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>宅系问卷调查</title>
+	<meta name="keywords" content="宅系，窝友，公寓，租房" >
+	<meta name="description" content="">
+	<link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script>
+	    !function(win) {
+	        function resize() {
+	            var domWidth = domEle.getBoundingClientRect().width;
+	            if(domWidth / v > 540){
+	                domWidth = 540 * v;
+	            }
+	            win.rem = domWidth / 3.75;
+	            domEle.style.fontSize = win.rem + "px";
+	        }
+	        var v, initial_scale, timeCode, dom = win.document, domEle = dom.documentElement, viewport = dom.querySelector('meta[name="viewport"]'), flexible = dom.querySelector('meta[name="flexible"]');
+	        if (viewport) {
+	            var o = viewport.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
+	            if(o){
+	                initial_scale = parseFloat(o[2]);
+	                v = parseInt(1 / initial_scale);
+	            }
+	        } else if(flexible) {
+	            var o = flexible.getAttribute("content").match(/initial\-dpr=(["']?)([\d\.]+)\1?/);
+	            if (o) {
+	                v = parseFloat(o[2]);
+	                initial_scale = parseFloat((1 / v).toFixed(2))
+	            }
+	        }
+	        if (!v && !initial_scale) {
+	            var n = (win.navigator.appVersion.match(/android/gi),
+	                    win.navigator.appVersion.match(/iphone/gi));
+	            v = win.devicePixelRatio;
+	            v = n ? v >= 3 ? 3 : v >= 2 ? 2 : 1 : 1,initial_scale = 1 / v
+	        }
+	        //没有viewport标签的情况下
+	        if (domEle.setAttribute("data-dpr", v), !viewport) {
+	            if (viewport = dom.createElement("meta"), viewport.setAttribute("name", "viewport"), viewport.setAttribute("content", "initial-scale=" + initial_scale + ", maximum-scale=" + initial_scale + ", minimum-scale=" + initial_scale + ", user-scalable=no"), domEle.firstElementChild) {
+	                domEle.firstElementChild.appendChild(viewport)
+	            } else {
+	                var m = dom.createElement("div");
+	                m.appendChild(viewport), dom.write(m.innerHTML)
+	            }
+	        }
+	        win.dpr = v;
+	        win.addEventListener("resize", function() {
+	            clearTimeout(timeCode), timeCode = setTimeout(resize, 300)
+	        }, false);
+	        win.addEventListener("pageshow", function(b) {
+	            b.persisted && (clearTimeout(timeCode), timeCode = setTimeout(resize, 300))
+	        }, false);
+	        resize();
+	    }(window);
+	</script>
+</head>
+<body>
+	<div class="swiper-container" id="swiper1">
+		<div class="swiper-wrapper">
+			<!-- 首页 -->
+			<div class="swiper-slide slide1">
+				<div class="slogan">
+					<span><i>⌞ </i>宅系<i> ⌝</i></span>
+					<p>首个可免<span>租</span>金的</p>
+					<span>程序员公寓</span>
+				</div>
+				<div class="down">
+					<img src="img/down.png" alt="">
+				</div>
+			</div>
+			<!-- 介绍 -->
+			<div class="swiper-slide slide2">
+				<ul class="list">
+					<li class="item tl"></li>
+					<li class="item tr"></li>
+					<li class="item bl"></li>
+					<li class="item br"></li>
+				</ul>
+				<div class="box">
+					<div class="logo">
+						<img src="img/logo.png" alt="">
+					</div>
+				</div>
+				<div class="content">
+					<p>一个只租给程序员的公寓，</p>
+					<p>一个神奇的场所。</p>
+					<p>这里有技术交流，</p>
+					<p>有超快网速，有免费VPN，</p>
+					<p>有阿姨收衣服！</p>
+					<p>你的想法在这里，</p>
+					<p>将有21个程序员帮你一起实现。</p>
+				</div>
+			</div>
+			<!-- 地理 -->
+			<div class="swiper-slide slide3">
+				<div class="ali">
+					<img src="img/ali.png" alt="">
+				</div>
+				<div class="detail">
+					<div class="info">
+						<span class="ch">距离阿里巴巴总部</span>
+						<span class="num">4KM</span>
+					</div>
+					<span class="line"></span>
+					<div class="des">
+						<p>距离未来科技城3KM，距离阿里巴巴总部4KM</p>
+						<p>如果你也是程序员，欢迎你来！</p>
+						<p>IF NOT NOW, WHEN?</p>
+						<p>IF NOT ME, WHO?</p>
+					</div>
+				</div>
+				<div class="down">
+					<img src="img/down.png" alt="">
+				</div>
+			</div>
+			<!-- 公寓展示 -->
+			<div class="swiper-slide slide4">
+				<div class="logo">
+					<img src="img/logo.png" alt="">
+				</div>
+				<div class="info">
+					<span class="en">EFFECT</span>
+					<span class="en">DISPLAY</span>
+					<span class="ch">公寓效果展示</span>
+				</div>
+				<div class="down">
+					<img src="img/down.png" alt="">
+				</div>
+				<div class="apartment">
+					<div class="home"><img src="img/home1.png" alt=""></div>
+					<div class="home"><img src="img/home2.png" alt=""></div>
+					<div class="home"><img src="img/home3.png" alt=""></div>
+				</div>
+			</div>
+			<!-- 建议 -->
+			<div class="swiper-slide slide5">
+				<div class="title">
+					首个可免租金的 <br> 程序员公寓
+				</div>
+				<div class="des">
+					<p>我们将提供一个名额免一个月的租金。</p>
+					<p>如果你是这22个房间的房客，会想要怎样的生活方式？</p>
+					<p>请留下您的宝贵建议。</p>
+				</div>
+				<div class="wraper">
+					
+					<div class="show_box">
+						<div class="show_inner" id="showWrap">
+					        <ul id="showList">
+								<li>
+									<div class="user_box">
+										<div class="header">
+											<img src="./img/header.jpg" alt="">
+										</div>
+										<div class="nickname">一笑</div>
+									</div>
+									<div class="idea">22个房间的房客，会想要怎样的生活方式？</div>
+								</li>
+								<li>
+									<div class="user_box">
+										<div class="header">
+											<img src="./img/header.jpg" alt="">
+										</div>
+										<div class="nickname">你好</div>
+									</div>
+									<div class="idea">哈哈哈房客，会想要怎样的生活方式？</div>
+								</li>
+								<li>
+									<div class="user_box">
+										<div class="header">
+											<img src="./img/header.jpg" alt="">
+										</div>
+										<div class="nickname">一笑</div>
+									</div>
+									<div class="idea">欢迎来到宅系公寓，会想要怎样的生活方式？</div>
+								</li>
+						    </ul>
+						</div>
+					</div>
+
+					<div class="advice">
+						<textarea name="advice" id="" cols="30" rows="10" placeholder="请输入您的宝贵建议......"></textarea>
+						<div class="support">提交</div>
+					</div>
+
+					<div class="connect">
+						<div class="logo">
+							<img src="img/logo.png" alt="">
+						</div>
+						<div class="intr">
+							<span>右边扫码直接</span>
+							<span>与CEO预约入住</span>
+						</div>
+						<div class="erweima">
+							<img src="img/ceo.png" alt="">
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- 用户提示 -->
+	<div class="toast" id="toast">您已提交成功！</div>
+
+	<script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+	<script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
